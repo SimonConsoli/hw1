@@ -1,0 +1,68 @@
+body{
+    margin:0;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1; 
+}
+#main{
+    width:100%;
+    height:100%;
+    display:flex;
+    margin:auto;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    background-image:url(https://img.freepik.com/free-vector/gradient-abstract-mountain-background-design_23-2149178797.jpg?w=2000);
+    background-size:cover;
+    background-position:center;
+    z-index:1;
+}
+
+
+#form{
+    background-color:#FFDAB9;
+    display:flex;
+    justify-content:center ;
+    
+}
+
+
+
+
+label{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:5px 0 5px 0;
+}
+input{
+    margin-left:0.5em;
+    margin-right:0.5em;
+}
+
+
+.errormessage{
+    color: tomato;
+    font-family: 'Kanit', sans-serif;
+    font-size: 0.7em;
+    margin-top: 1px;
+}
+
+
+
+
+.hidden{
+    display: none;
+}
+.login_err{
+text-align:right;
+color:rgb(145, 5, 5);
+font-size:1em;
+margin:5px 2px 0 0;
+
+
+}

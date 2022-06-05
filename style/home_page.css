@@ -1,0 +1,460 @@
+body{
+  margin:0;
+}
+ #bo{
+	 background-color: #34475a;
+ }
+.sidebar {
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  right:0;
+  background-color: #111; 
+  overflow-x: hidden;
+  padding-top: 60px; 
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  right:0;
+  transition: 0.3s;
+}
+.messaggio_errore{
+  display:flex;
+  justify-content: center;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+
+#main {
+	display:flex;
+	justify-content: right;
+  transition: margin-right .5s; 
+  padding: 20px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+.elimina{
+  font-weight: bold;
+  font-display:inherit ;
+  padding:1em;
+  background-color:#34475a;
+}
+.elimina:hover{
+  color:#f06161;
+}
+.header {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  background-image: url(https://img.freepik.com/free-vector/gradient-abstract-mountain-background-design_23-2149178797.jpg?w=2000);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+ flex-direction: column;
+}
+
+.header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #34475a;
+  opacity: .9;
+}
+
+.header .c {
+  flex-grow: 1;
+  width: 100%;
+  text-align: left;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+.x{
+    color:rgba(30, 29, 29, 0.7);
+    margin-right: 3.5em;
+    margin-left: -50px;
+    display: flex;
+}
+.oggetto{
+    display: flex;
+    width: 100%;
+}
+
+.contenuto{
+    width: 100%;
+}
+
+.header .c .c-inner .c-title {
+  font-size: calc(40px + (60 - 40) * ((100vw - 300px) / (1300 - 300)));
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.header .c .c-inner .btn {
+  border-radius: 20px;
+  margin: 15px 0;
+  min-width: 120px;
+}
+
+.header .c .c-caption {
+  position: static;
+  text-align: left;
+  
+}
+
+.header-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  opacity: .8;
+  color: #212529;
+}
+
+
+@media (max-width: 767.98px) {
+  .header {
+    height: auto;
+    padding: 50px 0;
+  
+  }
+
+  .header .c {
+    margin-top: 100px;
+  }
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#titoletto{
+	display:flex;
+	justify-content: center;
+}
+
+#gfds{
+	color:#34475a;
+	font-weight:bold;
+	font-size:2em;
+}
+.name{
+	color:#34475a;
+	font-weight:bold;
+	
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+
+.c-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+.c-item {
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  z-index: 1;
+  opacity: 1;
+  display: block;
+}
+
+
+.c-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+
+.infos {
+	height: 100px;
+	padding-bottom: 20px;
+	color: #fff;
+	display: flex;
+	opacity: .8;
+	align-items: flex-end;
+  }
+  .infos * {
+  margin: 0;
+  padding: 0;
+}
+
+
+.infos .title,
+.infos .socials {
+    flex-grow: 1;
+}
+
+.infos .title .subtitle,
+.infos .socials .subtitle {
+  font-size: 14px;
+  opacity: .9;
+}
+
+.infos .title .font-small {
+  color: #fff;
+  font-size: 13px;
+}
+
+.infos .subtitle {
+  margin: 2px;
+}
+
+.infos .subtitle i {
+  width: 20px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+.title {
+  font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1300 - 300)));
+}
+
+  .textmonial-item {
+  display: flex;
+  
+          align-items: center;
+}
+
+.textmonial-item .avatar {
+  min-width: 150px;
+  max-width: 150px;
+  min-height: 150px;
+  max-height: 150px;
+  border-radius: 50%;
+  margin-right: 40px;
+}
+
+
+
+.textmonial-item .line {
+  width: 70px;
+  height: 2px;
+  border-radius: 2px;
+  background: #f06161;
+  margin-bottom: 7px;
+  margin-top: -5px;
+}
+
+
+@media (max-width: 767.98px) {
+  .textmonial-item .avatar {
+    max-width: 80px;
+    min-width: 80px;
+    max-height: 80px;
+    min-height: 80px;
+    margin-right: 20px;
+  }
+}
+  footer{
+    font-size:1em;
+    background: #34475a;
+    color: #fff;
+    display:flex;
+    justify-content:space-around;
+    
+  }
+ 
+.section{
+	background-color:#c67979
+}
+
+
+
+#background{
+  margin:0;
+background-color: #34475a;
+}
+#sezionepost{
+    margin-left: auto;
+    margin-right: auto;
+    width: 66.67%;
+    font-size: 40px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+h9{
+  text-align: center;
+}
+h10{
+  text-align: left;
+  font-size:medium;
+}
+
+.errore{
+  text-align:right;
+color:rgb(145, 5, 5);
+font-size:1em;
+margin:5px 2px 0 0;
+}
+.errorinput{
+  text-align:right;
+color:rgb(145, 5, 5);
+font-size:1em;
+margin:5px 2px 0 0;
+}
+.withpost{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#opinion{
+  font-size: medium;
+    height: 15em;
+    width: 66.6vw;
+    margin-bottom: 1em;
+   font-family: 'Courier New', Courier, monospace;
+    
+}
+  #takeasong{
+display: block;
+margin-top:10px;
+width: 30.5vw;
+}
+#titolo{
+    font-size: medium;
+    width: 66.6vw;
+    margin-bottom: 1em;
+     font-family: 'Courier New', Courier, monospace;
+  
+}
+.orario{
+  font-size: medium;
+}
+
+#submit{
+    width:max-content;
+    height: max-content;
+    font-size: medium;
+   
+   
+}
+.hidden{
+  display:none;
+}
+#canzone{
+  display:flex;
+  justify-content: space-between;
+}
+.album img {
+    width: 66%;
+    height:auto;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+}
+
+.album span {
+
+     display:block;
+    font-size: medium;
+}
+
+.album a {
+   
+    font-size: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: block;
+    
+    color: white;
+   
+   
+
+}
+.spotify{
+  display:flex;
+  justify-content: space-around;
+}
